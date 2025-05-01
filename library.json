@@ -1,0 +1,26 @@
+{
+    "name":"TWAI Objects",
+    "description":"ESP32 CAN controller, based on TWAI. For use with C++ and Arduino environment",
+    "keywords":"data,communication,controller,CAN,CANBUS,CAN BUS,TWAI",
+    "authors": [
+        {
+            "name": "Johautt Hernández",
+            "email": "el.j.a.h.m.86@gmail.com",
+            "maintainer": true
+        },
+        {
+            "name": "deepseek",
+            "url": "https://www.deepseek.com/"
+        }
+    ],
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/jahm86/TWAI_Objects.git"
+    },
+    "version": "0.1.0",
+    "license": "LGPL-3.0-or-later OR MIT",
+    "frameworks": "arduino",
+    "platforms": ["espressif32"]
+  }
+  
