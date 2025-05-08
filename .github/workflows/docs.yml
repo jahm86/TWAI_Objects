@@ -17,7 +17,9 @@ jobs:
       
     - name: Generate Docs
       run: |
-        doxygen docs/Doxyfile
+        cd docs/
+        doxygen
+        cd ..
         mkdir -p public
         cp -r docs/html/* public/
         
