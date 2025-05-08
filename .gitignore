@@ -1,32 +1,74 @@
 # Prerequisites
 *.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
 # Fortran module files
 *.mod
 *.smod
 
-# Compiled Static libraries
+# --- Executables & binary files ---
+*.slo
+*.lo
 *.lai
 *.la
-*.a
-*.lib
-
-# Executables
 *.exe
 *.out
 *.app
+*.so
+*.dylib
+*.a
+*.lib
+*.dll
+*.o
+*.obj
+*.ko
+
+# --- Build directories ---
+build/
+bin/
+obj/
+Debug/
+Release/
+x64/
+*.sln
+*.vcxproj*
+*.user
+*.suo
+
+# --- Doxygen ---
+docs/html/
+docs/latex/
+docs/xml/
+docs/*.db
+#Doxyfile
+
+# --- IDE generated files ---
+*.cbp
+*.layout
+*.workspace
+*.depend
+*.tags
+
+# --- system & temporal files ---
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Logs & profiles ---
+*.log
+*.tlog
+*.pidb
+*.pdb
+*.ilk
+*.cache
+
+# --- Precompiled headers ---
+*.gch
+*.pch
+
+# --- CMake ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
