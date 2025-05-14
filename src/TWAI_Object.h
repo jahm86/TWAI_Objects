@@ -5,6 +5,11 @@
 #include <vector>
 #include "TWAI_Txcvr.h"
 
+#ifndef MAX_EVENT_QUEUE_ITEMS
+/**Maximun number of items in event queue*/
+#define MAX_EVENT_QUEUE_ITEMS (8)
+#endif  // MAX_EVENT_QUEUE_ITEMS
+
 /**
  * @class TWAI_Object
  * @brief Main CAN controller interface for ESP32 TWAI peripheral

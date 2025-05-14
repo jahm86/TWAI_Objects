@@ -27,6 +27,12 @@ bool TWAI_Object::begin(gpio_num_t tx_pin, gpio_num_t rx_pin,
         default: return false;
     }
 
+    // Inicializar event_queue
+    event_queue = xQueueCreate(MAX_EVENT_QUEUE_ITEMS, sizeof(can_event_t));
+    if (event_queue == 0) {
+        return false;
+    }
+
     f_config = TWAI_FILTER_CONFIG_ACCEPT_ALL();
     
     if (twai_driver_install(&g_config, &t_config, &f_config) != ESP_OK) {
