@@ -1,0 +1,15 @@
+<map id="TWAI_Object.h" name="TWAI_Object.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="315,5,431,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,109,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,33,122,78,121,73,322,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="134,79,285,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="348,33,250,76,247,71,346,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="309,79,438,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="376,31,376,65,371,65,371,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="462,79,525,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="394,28,463,69,460,74,391,33"/>
+<area shape="rect" id="Node000006" href="$TWAI__Txcvr_8h.html" title=" " alt="" coords="549,79,659,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="411,28,555,72,553,77,410,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="552,152,656,177"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="607,104,607,138,601,138,601,104"/>
+</map>

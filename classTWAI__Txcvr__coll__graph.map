@@ -1,0 +1,5 @@
+<map id="TWAI_Txcvr" name="TWAI_Txcvr">
+<area shape="rect" id="Node000001" title="Hardware abstraction for CAN transceivers (TJA1050, MCP2551, etc.)" alt="" coords="29,93,128,119"/>
+<area shape="rect" id="Node000002" href="$structTWAI__Txcvr_1_1Config.html" title="Transceiver configuration parameters." alt="" coords="5,5,152,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,45,81,93,76,93,76,45"/>
+</map>
