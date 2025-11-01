@@ -74,8 +74,8 @@ public:
      * @note Automatically enters reset then operation mode
      */
     bool begin(
-        gpio_num_t tx_pin = GPIO_NUM_5,
-        gpio_num_t rx_pin = GPIO_NUM_4,
+        gpio_num_t tx_pin = GPIO_NUM_21,
+        gpio_num_t rx_pin = GPIO_NUM_22,
         uint32_t baud_rate = 500000,
         twai_mode_t mode = TWAI_MODE_NORMAL,
         int controller_num = 0
