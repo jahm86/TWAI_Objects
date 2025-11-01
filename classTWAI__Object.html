@@ -131,9 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac15fe155f8d34c4176b7c6d9bac08cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cb8204a6b97e45c56a237b29640d6ab" id="r_a8cb8204a6b97e45c56a237b29640d6ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTWAI__Object.html#a8cb8204a6b97e45c56a237b29640d6ab">~TWAI_Object</a> ()</td></tr>
 <tr class="separator:a8cb8204a6b97e45c56a237b29640d6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eeef18c8e1371463d56f3537c65bb73" id="r_a1eeef18c8e1371463d56f3537c65bb73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTWAI__Object.html#a1eeef18c8e1371463d56f3537c65bb73">begin</a> (gpio_num_t tx_pin=GPIO_NUM_5, gpio_num_t rx_pin=GPIO_NUM_4, uint32_t baud_rate=500000, twai_mode_t mode=TWAI_MODE_NORMAL, int controller_num=0)</td></tr>
-<tr class="memdesc:a1eeef18c8e1371463d56f3537c65bb73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize CAN controller.  <br /></td></tr>
-<tr class="separator:a1eeef18c8e1371463d56f3537c65bb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a458a195ec32856b8ae417760596a4f1d" id="r_a458a195ec32856b8ae417760596a4f1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTWAI__Object.html#a458a195ec32856b8ae417760596a4f1d">begin</a> (gpio_num_t tx_pin=GPIO_NUM_21, gpio_num_t rx_pin=GPIO_NUM_22, uint32_t baud_rate=500000, twai_mode_t mode=TWAI_MODE_NORMAL, int controller_num=0)</td></tr>
+<tr class="memdesc:a458a195ec32856b8ae417760596a4f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize CAN controller.  <br /></td></tr>
+<tr class="separator:a458a195ec32856b8ae417760596a4f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4d0ee094dc7f3c55869cda70d404c4d" id="r_ac4d0ee094dc7f3c55869cda70d404c4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTWAI__Object.html#ac4d0ee094dc7f3c55869cda70d404c4d">end</a> ()</td></tr>
 <tr class="separator:ac4d0ee094dc7f3c55869cda70d404c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9531955698bb6bea9978b10ce88ab5c1" id="r_a9531955698bb6bea9978b10ce88ab5c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTWAI__Object.html#a9531955698bb6bea9978b10ce88ab5c1">send</a> (const twai_message_t &amp;msg, TickType_t timeout=pdMS_TO_TICKS(100))</td></tr>
@@ -341,8 +341,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1eeef18c8e1371463d56f3537c65bb73" name="a1eeef18c8e1371463d56f3537c65bb73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1eeef18c8e1371463d56f3537c65bb73">&#9670;&#160;</a></span>begin()</h2>
+<a id="a458a195ec32856b8ae417760596a4f1d" name="a458a195ec32856b8ae417760596a4f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a458a195ec32856b8ae417760596a4f1d">&#9670;&#160;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,13 +351,13 @@ Private Attributes</h2></td></tr>
           <td class="memname">bool TWAI_Object::begin </td>
           <td>(</td>
           <td class="paramtype">gpio_num_t&#160;</td>
-          <td class="paramname"><em>tx_pin</em> = <code>GPIO_NUM_5</code>, </td>
+          <td class="paramname"><em>tx_pin</em> = <code>GPIO_NUM_21</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">gpio_num_t&#160;</td>
-          <td class="paramname"><em>rx_pin</em> = <code>GPIO_NUM_4</code>, </td>
+          <td class="paramname"><em>rx_pin</em> = <code>GPIO_NUM_22</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -606,7 +606,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if association succeeded</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>Transceiver must be initialized via <a class="el" href="classTWAI__Object.html#a1eeef18c8e1371463d56f3537c65bb73" title="Initialize CAN controller.">begin()</a> </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>Transceiver must be initialized via <a class="el" href="classTWAI__Object.html#a458a195ec32856b8ae417760596a4f1d" title="Initialize CAN controller.">begin()</a> </dd></dl>
 
 </div>
 </div>
@@ -764,7 +764,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Internal use - registered during <a class="el" href="classTWAI__Object.html#a1eeef18c8e1371463d56f3537c65bb73" title="Initialize CAN controller.">begin()</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Internal use - registered during <a class="el" href="classTWAI__Object.html#a458a195ec32856b8ae417760596a4f1d" title="Initialize CAN controller.">begin()</a> </dd></dl>
 
 </div>
 </div>
@@ -995,7 +995,7 @@ Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="foote
 </small></address>
 <footer>
   <div class="footer-container">
-      <p>Documentation generated on Wed May 14 2025 03:40:00 by 
+      <p>Documentation generated on Sat Nov 1 2025 02:06:53 by 
          <a href="https://www.doxygen.org">Doxygen</a> 1.9.8</p>
       <p>© 2025 TWAI Objects Contributors</p>
   </div>
