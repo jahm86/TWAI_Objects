@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['standby_5fpin_0',['standby_pin',['../structTWAI__Txcvr_1_1Config.html#a526e305d7b6d35ead8e8547228f82edb',1,'TWAI_Txcvr::Config']]]
+  ['ret_5fhandle_0',['ret_handle',['../classTWAI__Object.html#a889cd685e1b185695d88b3498b162c6b',1,'TWAI_Object']]]
 ];
