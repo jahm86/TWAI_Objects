@@ -38,6 +38,13 @@ bool TWAI_Object::begin(gpio_num_t tx_pin, gpio_num_t rx_pin,
     if (twai_driver_install(&g_config, &t_config, &f_config) != ESP_OK) {
         return false;
     }
+    if (esp_intr_alloc(ETS_TWAI_INTR_SOURCE, 0, twai_isr_handler, (void*) this, &ret_handle) != ESP_OK) {
+        // Wont work because "twai_driver_install" allocates TWAI interrupt:
+        // esp_intr_alloc(ETS_TWAI_INTR_SOURCE, g_config->intr_flags, twai_intr_handler_main, NULL, &p_twai_obj->isr_handle)
+        // If you want to use interrupt, dont use ESP TWAI C library
+        // TODO: drop ESP TWAI C library
+        return false;
+    }
     return twai_start() == ESP_OK;
 }
 
@@ -185,6 +192,10 @@ void TWAI_Object::end() {
     if (event_queue) {
         vQueueDelete(event_queue);
         event_queue = nullptr;
+    }
+    if (ret_handle) {
+        esp_intr_free(ret_handle);
+        ret_handle = nullptr;
     }
     twai_stop();
     twai_driver_uninstall();

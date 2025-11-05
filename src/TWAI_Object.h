@@ -186,6 +186,7 @@ private:
     int controller_id = 0;                          ///< Controller index (for multi-CAN chips)
     std::vector<twai_user_filter_t> active_filters; ///< Active filter configurations
     TWAI_Txcvr* connected_txcvr = nullptr;          ///< Linked transceiver instance
+    intr_handle_t ret_handle;                       ///< Handle that wiil be uesd to request details or free the interrupt
 
     /**
      * @brief Apply hardware filter configurations
